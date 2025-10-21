@@ -7,119 +7,114 @@
   <title></title>
   <link href="./dist/output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4310934ca0.js" crossorigin="anonymous"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-
 </head>
 
-<body class="font-sans ">
+<body class="p-0 m-0 font-sans">
 
+  <!-- Header Mobile -->
   <header class="py-4 bg-amber-400">
-    <nav class="flex items-center justify-around ">
-      <div>
+    <nav class="flex flex-col items-center justify-around px-4 md:flex-row md:px-0">
+      <div class="mb-4 md:mb-0">
         <img class="cursor-pointer" src="/src/image/logo.png" alt="Logo" width="50px">
       </div>
 
-      <div>
-        <ul class="flex justify-center gap-8 ">
-          <li class="my-2 text-lg font-bold hover:underline md:mx-4 md:my-0"><a href="">Home</a></li>
-          <li class="my-2 text-lg font-bold hover:underline md:mx-4 md:my-0"><a href="">Shop</a></li>
-          <li class="my-2 text-lg font-bold hover:underline md:mx-4 md:my-0"><a href="">Contact</a></li>
-          <li class="my-2 text-lg font-bold hover:underline md:mx-4 md:my-0"><a href="">About</a></li>
+      <div class="w-full md:w-auto">
+        <ul class="flex flex-col justify-center gap-4 text-center md:flex-row md:gap-8">
+          <li><a href="" class="block py-2 text-lg font-bold hover:underline md:py-0">Home</a></li>
+          <li><a href="" class="block py-2 text-lg font-bold hover:underline md:py-0">Shop</a></li>
+          <li><a href="" class="block py-2 text-lg font-bold hover:underline md:py-0">Contact</a></li>
+          <li><a href="" class="block py-2 text-lg font-bold hover:underline md:py-0">About</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- Banner -->
-
+  <!-- Banner Mobile -->
   <section class="bg-center bg-cover" style="background-image: url(/src/image/banner.webp)">
-    <div class="h-[800px] max-w-5xl px-4 mx-auto text-center flex flex-col items-center justify-center">
-      <div>
-        <h1 class="text-5xl font-semibold text-white">Tijolo ou travessura?</h1>
-        <h3 class="max-w-md mt-10 font-semibold text-white whitespace-normal">
+    <div class="h-[400px] md:h-[800px] max-w-5xl px-4 mx-auto text-center flex flex-col items-center justify-center">
+      <div class="px-4">
+        <h1 class="text-3xl font-semibold text-white md:text-5xl">Tijolo ou travessura?</h1>
+        <h3 class="max-w-md mt-6 text-base font-semibold text-white md:mt-10 md:text-lg">
           Descubra surpresas escondidas e muito mais com esses novos conjuntos para diversão de Halloween.
         </h3>
       </div>
 
       <button
-        class="p-3 px-5 font-semibold transition duration-150 ease-out bg-white hover:ease-in hover:bg-black hover:text-white mt-7 rounded-2xl">Confira<i
-          class="items-center ml-4 fa-solid fa-chevron-right"></i> </button>
+        class="p-3 px-5 mt-6 text-sm font-semibold transition duration-150 ease-out bg-white hover:bg-black hover:text-white md:mt-7 rounded-2xl md:text-base">
+        Confira<i class="items-center ml-4 fa-solid fa-chevron-right"></i>
+      </button>
     </div>
   </section>
 
-  <!-- Main  -->
-  <section>
-    <h1 class="mt-20 text-2xl font-semibold ml-80">Destaques</h1>
-    <div class="flex justify-center gap-10 mt-10">
+  <!-- Main Mobile -->
+  <section class="px-4 md:px-0">
+    <h1 class="mt-10 text-xl font-semibold text-center md:mt-20 md:text-2xl md:text-left md:ml-80">Destaques</h1>
+    <div class="flex flex-col justify-center gap-6 mt-6 md:flex-row md:gap-10 md:mt-10">
       <div class="flex flex-col items-center justify-center">
-        <div class="border border-black">
-          <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-            src="/src/image/wednesday.png" alt="Wandinha" width="250px">
+        <div class="border border-black w-full max-w-[250px]">
+          <img class="w-full h-auto p-2 transition cursor-pointer hover:scale-105"
+            src="/src/image/wednesday.png" alt="Wandinha">
         </div>
 
-        <div class="max-w-xs">
+        <div class="max-w-xs mt-4 text-center">
+          <h3 class="text-sm font-semibold md:text-base">Wednesday - Casa da Mortícia</h3>
+          <h3 class="mt-2 text-lg font-bold md:text-xl">R$ 999,99</h3>
 
-          <h3 class="font-semibold">Wednesday - Casa da Mortícia</h3>
-          <h3 class="font-bold">R$ 999,99</h3>
-
-          <button class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+          <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
             Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
       </div>
 
       <div class="flex flex-col items-center justify-center">
-        <div class="border border-black">
-          <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-            src="/src/image/one-piece.png" alt="one piece barco" width="250px">
+        <div class="border border-black w-full max-w-[250px]">
+          <img class="w-full h-auto p-2 transition cursor-pointer hover:scale-105"
+            src="/src/image/one-piece.png" alt="one piece barco">
         </div>
 
-        <div class="max-w-xs">
-          <h3 class="font-semibold">One Piece - Baratie</h3>
-          <h3 class="font-bold">R$ 2999,99</h3>
+        <div class="max-w-xs mt-4 text-center">
+          <h3 class="text-sm font-semibold md:text-base">One Piece - Baratie</h3>
+          <h3 class="mt-2 text-lg font-bold md:text-xl">R$ 2999,99</h3>
 
-          <button class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+          <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
             Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
       </div>
 
       <div class="flex flex-col items-center justify-center">
-        <div class="border border-black">
-          <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-            src="/src/image/arkhan.png" alt="arkhan" width="250px">
+        <div class="border border-black w-full max-w-[250px]">
+          <img class="w-full h-auto p-2 transition cursor-pointer hover:scale-105"
+            src="/src/image/arkhan.png" alt="arkhan">
         </div>
 
-        <div class="max-w-xs">
-          <h3 class="font-semibold">DC - Arkham Asylum™</h3>
-          <h3 class="font-bold">R$ 2999,99</h3>
+        <div class="max-w-xs mt-4 text-center">
+          <h3 class="text-sm font-semibold md:text-base">DC - Arkham Asylum™</h3>
+          <h3 class="mt-2 text-lg font-bold md:text-xl">R$ 2999,99</h3>
 
-          <button class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+          <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
             Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
       </div>
 
       <div class="flex flex-col items-center justify-center">
-        <div class="border border-black">
-          <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-            src="/src/image/escavadeira.png" alt="escavadeira" width="250px">
+        <div class="border border-black w-full max-w-[250px]">
+          <img class="w-full h-auto p-2 transition cursor-pointer hover:scale-105"
+            src="/src/image/escavadeira.png" alt="escavadeira">
         </div>
 
-        <div class="max-w-xs">
-          <h3 class="font-semibold">Technic - Escavadeira</h3>
-          <h3 class="font-bold">R$ 3999,99</h3>
+        <div class="max-w-xs mt-4 text-center">
+          <h3 class="text-sm font-semibold md:text-base">Technic - Escavadeira</h3>
+          <h3 class="mt-2 text-lg font-bold md:text-xl">R$ 3999,99</h3>
 
-          <button class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+          <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
             Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
@@ -127,145 +122,99 @@
     </div>
   </section>
 
-
-  <!-- Grid image -->
-
-  <section class="my-40 ">
-    <div class="flex flex-col items-center justify-center ">
-      <h1 class="text-2xl font-bold">Veja o que as outras pessoas estão construindo</h1>
-      <p class="font-semibold">Embarque numa nova aventura de construção com estes conjuntos LEGO® inspiradores</p>
+  <!-- Grid image Mobile -->
+  <section class="px-4 my-20 md:my-40 md:px-0">
+    <div class="flex flex-col items-center justify-center text-center">
+      <h1 class="text-xl font-bold md:text-2xl">Veja o que as outras pessoas estão construindo</h1>
+      <p class="max-w-2xl mt-2 text-sm font-semibold md:text-base">
+        Embarque numa nova aventura de construção com estes conjuntos LEGO® inspiradores
+      </p>
     </div>
 
-    <div class="flex justify-center gap-5 py-5 ">
-      <div class="flex-shrink-0 ">
+    <div class="flex flex-col justify-center gap-4 py-5 md:flex-row md:gap-5">
+      <div class="flex-shrink-0">
         <img src="/src/image/grid1.webp" alt="Imagem grande"
-          class="w-[630px] h-[630px] object-cover cursor-pointer hover:scale-105">
+          class="w-full h-auto max-w-full md:w-[630px] md:h-[630px] object-cover cursor-pointer hover:scale-105">
       </div>
 
-      <div class="flex flex-col gap-4 ">
-        <div class="flex gap-4">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 md:flex-row">
           <img src="/src/image/grid2.webp" alt=""
-            class="w-[305px] h-[305px] object-cover cursor-pointer hover:scale-105">
+            class="w-full h-auto max-w-full md:w-[305px] md:h-[305px] object-cover cursor-pointer hover:scale-105">
           <img src="/src/image/grid3.webp" alt=""
-            class="w-[305px] h-[305px] object-cover cursor-pointer hover:scale-105">
+            class="w-full h-auto max-w-full md:w-[305px] md:h-[305px] object-cover cursor-pointer hover:scale-105">
         </div>
-        <div class="flex gap-4">
+        <div class="flex flex-col gap-4 md:flex-row">
           <img src="/src/image/grid4.webp" alt=""
-            class="w-[305px] h-[305px] object-cover cursor-pointer hover:scale-105">
+            class="w-full h-auto max-w-full md:w-[305px] md:h-[305px] object-cover cursor-pointer hover:scale-105">
           <img src="/src/image/grid5.webp" alt=""
-            class="w-[305px] h-[305px] object-cover cursor-pointer hover:scale-105">
+            class="w-full h-auto max-w-full md:w-[305px] md:h-[305px] object-cover cursor-pointer hover:scale-105">
         </div>
       </div>
     </div>
-
-
-
   </section>
 
-
-  <h1 class="text-2xl font-semibold mx-72">O que os outros estão comprando</h1>
-  <!-- Carossel -->
-  <section class="flex items-center justify-center px-40 mx-auto my-40">
-
-    <div class="w-full h-full swiper">
+  <h1 class="px-64 text-2xl font-semibold ">O que os outros estão comprando</h1>
+  <!-- Carrossel Mobile -->
+  <section class="px-4 mx-auto my-20 md:px-40 md:my-40">
+    
+    
+    <div class="w-full h-full mt-6 swiper md:mt-0">
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="flex justify-center swiper-slide">
+        <div class="swiper-slide">
           <div class="flex flex-col items-center">
-            <div>
-              <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-                src="/src/image/wednesday.png" alt="Wandinha" width="250px">
+            <div class="border border-black w-full max-w-[200px] md:max-w-[250px]">
+              <img class="w-full h-auto p-2" src="/src/image/wednesday.png" alt="Wandinha">
             </div>
-            <div class="max-w-xs text-center">
-              <h3 class="font-semibold">Wednesday</h3>
-              <h3 class="font-bold">R$ 999,99</h3>
-              <button
-                class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+            <div class="max-w-xs mt-4 text-center">
+              <h3 class="text-sm font-semibold md:text-base">Wednesday</h3>
+              <h3 class="mt-1 text-base font-bold md:text-lg">R$ 999,99</h3>
+              <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
                 Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="flex justify-center swiper-slide">
+        <div class="swiper-slide">
           <div class="flex flex-col items-center">
-            <div>
-              <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-                src="/src/image/op2.png" alt="one piece" width="250px">
+            <div class="border border-black w-full max-w-[200px] md:max-w-[250px]">
+              <img class="w-full h-auto p-2" src="/src/image/op2.png" alt="one piece">
             </div>
-            <div class="max-w-xs text-center">
-              <h3 class="font-semibold">One piece - Cabana</h3>
-              <h3 class="font-bold">R$ 279,99</h3>
-              <button
-                class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+            <div class="max-w-xs mt-4 text-center">
+              <h3 class="text-sm font-semibold md:text-base">One piece - Cabana</h3>
+              <h3 class="mt-1 text-base font-bold md:text-lg">R$ 279,99</h3>
+              <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
                 Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="flex justify-center swiper-slide">
+        <div class="swiper-slide">
           <div class="flex flex-col items-center">
-            <div>
-              <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-                src="/src/image/car.png" alt="car" width="250px">
+            <div class="border border-black w-full max-w-[200px] md:max-w-[250px]">
+              <img class="w-full h-auto p-2" src="/src/image/car.png" alt="car">
             </div>
-            <div class="max-w-xs text-center">
-              <h3 class="font-semibold">Honda S2000</h3>
-              <h3 class="font-bold">R$ 249,99</h3>
-              <button
-                class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+            <div class="max-w-xs mt-4 text-center">
+              <h3 class="text-sm font-semibold md:text-base">Honda S2000</h3>
+              <h3 class="mt-1 text-base font-bold md:text-lg">R$ 249,99</h3>
+              <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
                 Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="flex justify-center swiper-slide">
+        <div class="swiper-slide">
           <div class="flex flex-col items-center">
-            <div>
-              <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-                src="/src/image/one-piece.png" alt="one piece" width="250px">
+            <div class="border border-black w-full max-w-[200px] md:max-w-[250px]">
+              <img class="w-full h-auto p-2" src="/src/image/escavadeira.png" alt="car">
             </div>
-            <div class="max-w-xs text-center">
-              <h3 class="font-semibold">One Piece - Baratie </h3>
-              <h3 class="font-bold">R$ 2999,99</h3>
-              <button
-                class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
-                Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center swiper-slide">
-          <div class="flex flex-col items-center">
-            <div>
-              <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-                src="/src/image/arkhan.png" alt="arkhan" width="250px">
-            </div>
-            <div class="max-w-xs text-center">
-              <h3 class="font-semibold">DC - Arkham Asylum™</h3>
-              <h3 class="font-bold">R$ 2999,99</h3>
-              <button
-                class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
-                Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center swiper-slide">
-          <div class="flex flex-col items-center">
-            <div>
-              <img class="p-2 transition cursor-pointer duration-0 hover:duration-150 hover:scale-105"
-                src="/src/image/escavadeira.png" alt="escavadeira" width="250px">
-            </div>
-            <div class="max-w-xs text-center">
-              <h3 class="font-semibold">Technic - Escavadeira</h3>
-              <h3 class="font-bold">R$ 3999,99</h3>
-              <button
-                class="p-2 m-3 font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white">
+            <div class="max-w-xs mt-4 text-center">
+              <h3 class="text-sm font-semibold md:text-base">Technic - Escavadeira</h3>
+              <h3 class="mt-1 text-base font-bold md:text-lg">R$ 3999,99</h3>
+              <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
                 Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
@@ -273,64 +222,87 @@
         </div>
 
 
+        <div class="swiper-slide">
+          <div class="flex flex-col items-center">
+            <div class="border border-black w-full max-w-[200px] md:max-w-[250px]">
+              <img class="w-full h-auto p-2" src="/src/image/arkhan.png" alt="car">
+            </div>
+            <div class="max-w-xs mt-4 text-center">
+              <h3 class="text-sm font-semibold md:text-base">DC - Arkham Asylum™</h3>
+              <h3 class="mt-1 text-base font-bold md:text-lg">R$ 2999,99</h3>
+              <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
+                Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex flex-col items-center">
+            <div class="border border-black w-full max-w-[200px] md:max-w-[250px]">
+              <img class="w-full h-auto p-2" src="/src/image/one-piece.png" alt="car">
+            </div>
+            <div class="max-w-xs mt-4 text-center">
+              <h3 class="text-sm font-semibold md:text-base">One piece - Baratie</h3>
+              <h3 class="mt-1 text-base font-bold md:text-lg">R$ 2999,99</h3>
+              <button class="p-2 m-3 text-sm font-medium bg-white border border-black rounded-2xl hover:bg-black hover:text-white md:text-base">
+                Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
 
       </div>
 
       <div class="mt-8 swiper-pagination"></div>
-
     </div>
   </section>
 
-
-  <section>
-    <h1 class="mt-20 text-2xl font-semibold ml-80">Descubra mais</h1>
-    <div class="flex justify-center gap-4 my-3">
-      <div>
-        <img src="/src/image/mago.webp" alt="Mago" width="400px">
-        <div class="flex flex-col items-center justify-center">
-          <h1 class="py-2 text-xl font-semibold ">Quer ajuda para presentear?</h1>
-          <p class="text-sm ">Experimente nosso novo Localizador de Presentes</p>
-          <button class="py-2 hover:underline">Saiba mais <i class="fa-solid fa-chevron-right"></i> </button>
+  <!-- Descubra Mais Mobile -->
+  <section class="px-4 md:px-0">
+    <h1 class="mt-10 text-xl font-semibold text-center md:mt-20 md:text-2xl md:text-left md:ml-80">Descubra mais</h1>
+    <div class="flex flex-col justify-center gap-6 my-6 md:flex-row md:gap-4 md:my-3">
+      <div class="text-center">
+        <img src="/src/image/mago.webp" alt="Mago" class="w-full max-w-[400px] h-auto mx-auto">
+        <div class="flex flex-col items-center justify-center mt-4">
+          <h1 class="py-2 text-lg font-semibold md:text-xl">Quer ajuda para presentear?</h1>
+          <p class="max-w-xs text-xs md:text-sm">Experimente nosso novo Localizador de Presentes</p>
+          <button class="py-2 text-sm hover:underline md:text-base">Saiba mais <i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
 
-      <div>
-        <img src="/src/image/lego1.webp" alt="Mago" width="400px">
-        <div class="flex flex-col items-center justify-center">
-          <h1 class="py-2 text-xl font-semibold ">Leia mais sobre</h1>
-          <p class="text-sm ">Veja nossa biblioteca de artigos para obter ideias e inspiração.</p>
-          <button class="py-2 hover:underline">Saiba mais <i class="fa-solid fa-chevron-right"></i> </button>
+      <div class="text-center">
+        <img src="/src/image/lego1.webp" alt="Mago" class="w-full max-w-[400px] h-auto mx-auto">
+        <div class="flex flex-col items-center justify-center mt-4">
+          <h1 class="py-2 text-lg font-semibold md:text-xl">Leia mais sobre</h1>
+          <p class="max-w-xs text-xs md:text-sm">Veja nossa biblioteca de artigos para obter ideias e inspiração.</p>
+          <button class="py-2 text-sm hover:underline md:text-base">Saiba mais <i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
 
-      <div>
-        <img src="/src/image/lego3.webp" alt="Mago" width="400px">
-        <div class="flex flex-col items-center justify-center">
-          <h1 class="max-w-xs py-2 text-xl font-semibold break-words">Monte seu conjunto com o aplicativo LEGO® Builder
-          </h1>
-          <p class="max-w-xs text-sm break-words ">Forme uma equipe para construir em conjunto ou vá sozinho com
-            instruções interativas em 3D.</p>
-          <button class="py-2 hover:underline">Saiba mais <i class="fa-solid fa-chevron-right"></i> </button>
+      <div class="text-center">
+        <img src="/src/image/lego3.webp" alt="Mago" class="w-full max-w-[400px] h-auto mx-auto">
+        <div class="flex flex-col items-center justify-center mt-4">
+          <h1 class="max-w-xs py-2 text-lg font-semibold break-words md:text-xl">Monte seu conjunto com o aplicativo LEGO® Builder</h1>
+          <p class="max-w-xs text-xs break-words md:text-sm">Forme uma equipe para construir em conjunto ou vá sozinho com instruções interativas em 3D.</p>
+          <button class="py-2 text-sm hover:underline md:text-base">Saiba mais <i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
-
     </div>
-
   </section>
 
-
-
-  <footer class="bg-amber-400 ">
-    <div class="flex justify-evenly">
-      <div class="flex flex-col">
-        <img class="py-8" src="/src/image/logo.png" alt="" width="100px">
-        <a href="" class="text-xl text-black hover:underline">Clube De Vantagens</a>
-        <a href="" class="py-8 text-xl text-black hover:underline">Procure uma loja LEGO</a>
+  <!-- Footer Mobile -->
+  <footer class="py-8 bg-amber-400 md:py-0">
+    <div class="flex flex-col px-4 md:flex-row justify-evenly md:px-0">
+      <div class="flex flex-col items-center mb-8 text-center md:items-start md:text-left md:mb-0">
+        <img class="py-4 md:py-8" src="/src/image/logo.png" alt="" width="80px md:100px">
+        <a href="" class="py-2 text-lg text-black md:text-xl hover:underline">Clube De Vantagens</a>
+        <a href="" class="py-4 text-lg text-black md:py-8 md:text-xl hover:underline">Procure uma loja LEGO</a>
 
         <div class="text-center">
-          <h1 class="py-2 text-xl font-bold text-black">INSCREVA-SE NA NOSSA NEWSLETTER</h1>
-          <div>
-            <input class="px-20 py-2 rounded-l-md mr-[-4px] ring-1 ring-purple-900" type="text"
+          <h1 class="py-2 text-lg font-bold text-black md:text-xl">INSCREVA-SE NA NOSSA NEWSLETTER</h1>
+          <div class="flex justify-center">
+            <input class="w-48 px-4 py-2 md:px-20 rounded-l-md ring-1 ring-purple-900 md:w-auto" type="text"
               placeholder="Insira seu e-mail">
             <button class="px-4 py-2 text-black bg-purple-600 rounded-r-md hover:bg-purple-900 ring-1 ring-purple-900">
               <i class="fa-solid fa-chevron-right"></i>
@@ -339,33 +311,28 @@
         </div>
       </div>
 
+      <div class="text-center md:text-left">
+        <h1 class="my-6 text-xl font-bold md:my-10 md:text-2xl">Suporte</h1>
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-10">
 
-      <div>
-        <h1 class="my-10 text-2xl font-bold">Suporte</h1>
-        <div class="grid grid-cols-3 gap-10">
-
-          <div><a href="" class="font-semibold hover:underline">Acessibilidade</a></div>
-          <div><a href="" class="font-semibold hover:underline">Método de pagamento</a></div>
-          <div><a href="" class="font-semibold hover:underline">Serviços</a></div>
-          <div><a href="" class="font-semibold hover:underline">Instruções de construção</a></div>
-          <div><a href="" class="font-semibold hover:underline">Entregas e devoluções</a></div>
-          <div><a href="" class="font-semibold hover:underline">Dúvidas Frequentes</a></div>
-          <div><a href="" class="font-semibold hover:underline">Peças de reposição</a></div>
-          <div><a href="" class="font-semibold hover:underline">Termos e condições</a></div>
-          <div><a href="" class="font-semibold hover:underline">Fale conosco</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Acessibilidade</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Método de pagamento</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Serviços</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Instruções de construção</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Entregas e devoluções</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Dúvidas Frequentes</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Peças de reposição</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Termos e condições</a></div>
+          <div><a href="" class="block py-1 text-sm font-semibold hover:underline md:text-base">Fale conosco</a></div>
 
         </div>
       </div>
-    </div> <br>
-   
+    </div>
+    <br>
   </footer>
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
-
 </body>
 
 </html>
